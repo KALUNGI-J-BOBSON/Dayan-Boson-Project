@@ -13,9 +13,45 @@
   This is a description of Bobson and Dayan's survey form.
 </p>
 <form id="survey-form">
-  <input type="text" id="name" placeholder="Enter the name" required>
- <input type="email" id="email" placeholder="Enter Your Email" required>
-<input type="number" id="number" min="0" max="10" placeholder="Enter the number in the range of 0 to 10" style="width:270px">
+  <label id="name-label" for="name">Your Name: </label>
+  <input type="text" id="name" placeholder="Enter the name" required><br/>
+  <label id="email-label" for="email">Your Email: </label>
+  <input type="email" id="email" placeholder="Enter the email" required><br/>
+  <label id="number-label" for="number">Your Number: </label>
+  <input type="number" id="number" min="0" max="10" placeholder="Enter the number in the range of 0 to 10" style="width:270px"><br/>
+  <label for="dropdown">Please Select an Option: </label>
+  <select id="dropdown">
+    <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select><br/>
+      <div>
+        <p>Options</p>
+        <label>A)</label>
+        <input type="radio" name="ints" value="A">
+        <label>B)</label>
+        <input type="radio" name="ints" value="B">
+        <label>C)</label>
+        <input type="radio" name="ints" value="C">
+      </div>
+      <br/>
+      <div>
+        <p>Checkboxes</p>
+        <label>i)</label>
+        <input type="checkbox" value="i">
+        <label>ii)</label>
+        <input type="checkbox" value="ii">
+        <label>iii)</label>
+        <input type="checkbox" value="iii">
+        <label>iv)</label>
+        <input type="checkbox" value="iv">
+      </div>
+      <br/>
+      <label for="textarea-comments">additional comments</label><br/>
+      <textarea id="textarea-comments" style="width: 250px; height:250px;">
+      </textarea>
+      <br/>
+      <input type="submit" value="Submit" id="submit">
 
 </form>
     <!--
